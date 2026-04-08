@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "前端技术分享",
+    "icon": "fas fa-code",
+    "url": "//player.bilibili.com/player.html?aid=669520137&bvid=BV1oa4y1L7mw&cid=234543483&page=1",
+    "description": "前端技术分享视频,讲解最新的前端开发技术和最佳实践",
+    "tags": ["前端", "JavaScript", "Vue"],
+    "category": "技术分享",
+    "date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "title": "编程教程入门",
+    "icon": "fas fa-laptop-code",
+    "url": "//player.bilibili.com/player.html?aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&page=1",
+    "description": "优质编程教程视频,从基础到进阶全面讲解",
+    "tags": ["编程", "教程", "学习"],
+    "category": "编程教程",
+    "date": "2026-04-02"
+  },
+  {
+    "id": 3,
+    "title": "生活记录 Vlog",
+    "icon": "fas fa-heart",
+    "url": "//player.bilibili.com/player.html?aid=32762964&bvid=BV1bW411H7Nj&cid=57467168&page=1",
+    "description": "记录生活中的精彩瞬间和美好时光",
+    "tags": ["生活", "vlog", "记录"],
+    "category": "生活",
+    "date": "2026-04-03"
+  },
+  {
+    "id": 4,
+    "title": "励志短片精选",
+    "icon": "fas fa-fire",
+    "url": "//player.bilibili.com/player.html?aid=2979186&cid=4667585&page=1",
+    "description": "激励人心的励志短片,为你加油打气",
+    "tags": ["励志", "正能量", "成长"],
+    "category": "励志",
+    "date": "2026-04-04"
+  },
+  {
+    "id": 5,
+    "title": "React 进阶教程",
+    "icon": "fab fa-react",
+    "url": "//player.bilibili.com/player.html?aid=123456&bvid=BV1test123&page=1",
+    "description": "React 高级特性讲解,Hooks、性能优化等",
+    "tags": ["React", "前端", "进阶"],
+    "category": "技术分享",
+    "date": "2026-04-05"
+  },
+  {
+    "id": 6,
+    "title": "Python 数据分析",
+    "icon": "fab fa-python",
+    "url": "//player.bilibili.com/player.html?aid=234567&bvid=BV2test456&page=1",
+    "description": "Python 数据分析实战教程",
+    "tags": ["Python", "数据分析", "教程"],
+    "category": "编程教程",
+    "date": "2026-04-06"
+  },
+  {
+    "id": 7,
+    "title": "Vue3 完全指南",
+    "icon": "fab fa-vuejs",
+    "url": "//player.bilibili.com/player.html?aid=345678&bvid=BV3test789&page=1",
+    "description": "Vue3 从入门到精通完整教程",
+    "tags": ["Vue", "前端", "框架"],
+    "category": "技术分享",
+    "date": "2026-04-07"
+  },
+  {
+    "id": 8,
+    "title": "旅行纪录片",
+    "icon": "fas fa-plane",
+    "url": "//player.bilibili.com/player.html?aid=456789&bvid=BV4test012&page=1",
+    "description": "世界各地的旅行记录",
+    "tags": ["旅行", "纪录片", "世界"],
+    "category": "生活",
+    "date": "2026-04-08"
+  },{
+    "id": 9,
+    "title": "旅行纪录片",
+    "icon": "fas fa-plane",
+    "url": "//player.bilibili.com/player.html?isOutside=true&aid=116333819857720&bvid=BV1xwXfBrErL&cid=37293129804&p=1",
+    "description": "你是一个采访",
+    "tags": ["采访"],
+    "category": "生活",
+    "date": "2026-04-08"
+  }
+
+]

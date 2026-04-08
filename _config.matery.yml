@@ -1,0 +1,354 @@
+# main menu navigation url and icon
+# 配置菜单导航的名称、路径和图标icon.
+menu:
+  Index:
+    url: /
+    icon: fas fa-home
+  Archives:
+    url: /archives
+    icon: fas fa-archive
+  About:
+    url: /about
+    icon: fas fa-user-circle
+  # 个人简历页面(可控制访问)
+  求职:
+    url: /resume
+    icon: fas fa-file-alt
+  # 二级菜单示例
+  音频:
+    icon: fas fa-headphones
+    children:
+      - name: 音乐
+        url: /musics
+        icon: fas fa-music
+      - name: 视频
+        url: /videos
+        icon: fas fa-video
+
+# Website start time.
+# 站点运行开始时间.
+time:
+  enable: true
+  year: 2026 # 年份
+  month: 04 # 月份
+  date: 08 # 日期
+  hour: 00 # 小时
+  minute: 00 # 分钟
+  second: 00 # 秒
+
+# Index cover carousel configuration.
+# 首页封面轮播图的相关配置.
+cover:
+  showPrevNext: true # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
+  showIndicators: true # 是否显示指示器. # Whether to display the indicators
+  autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
+  duration: 120 # 切换延迟时间. Switching delay time.
+  intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
+  useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
+
+# index page dream text,
+# 配置首页显示"梦想"的语句.
+dream:
+  enable: true
+  showTitle: true
+  title: 我的梦想
+  text: 热爱技术，追求卓越。用代码改变世界，用技术成就未来。每一行代码都是通往梦想的阶梯，每一次分享都是成长的见证。
+
+# Whether to display the musics.
+# 是否在首页显示音乐.
+music:
+  enable: true
+  title: #非吸底模式有效
+    enable: true
+    show: 听听音乐
+  autoHide: true    # hide automaticaly
+  server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
+  type: playlist    #require song, playlist, album, search, artist
+  id: 60198     #require	song id / playlist id / album id / search keyword (已更换为可用的歌单)
+  fixed: true       # 开启吸底模式
+  autoplay: false   # 是否自动播放
+  theme: '#42b983'
+  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
+  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: true  # 列表默认折叠
+  hideLrc: true     # 隐藏歌词
+
+# Whether to display the musics.
+# 单独的音乐页面.
+musics:
+  enable: true
+  title:          #非吸底模式有效
+    enable: true
+    show: 听听音乐
+  server: netease   #require music platform: netease, tencent, kugou, xiami, baidu
+  type: playlist    #require song, playlist, album, search, artist
+  id: 60198     #require song id / playlist id / album id / search keyword (已更换为可用的歌单)
+  fixed: false      # 开启吸底模式
+  autoplay: false   # 是否自动播放
+  theme: '#42b983'
+  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
+  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: false  # 列表默认折叠
+  listMaxHeight: "525px" #列表最大高度
+
+# Whether to display the videos.
+# 是否在首页显示视频.
+video:
+  enable: false
+  showTitle: true
+  title: 精彩视频
+  url: # url和iframeUrl其中一个必填
+  iframeUrl: //player.bilibili.com/player.html?aid=669520137&bvid=BV1oa4y1L7mw&cid=234543483&page=1
+  pic:
+  thumbnails:
+  height: 400 # 如：400
+  autoplay: false # 是否自动播放
+  theme: '#42b983'
+  loop: false # 是否循环播放
+  preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7
+
+# 单独的视频页面配置
+videos:
+  enable: true
+  title: 精彩视频集锦
+
+# Configure website favicon and LOGO
+# 配置网站favicon和网站LOGO
+favicon: /favicon.png
+logo: /medias/logo.png
+
+# The configuration of the second button in the home banner,
+# including the display name of the button, the font awesome icon, and the hyperlink to the button.
+# 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
+indexbtn:
+  enable: true
+  name: Github
+  icon: fab fa-github-alt
+  url: https://github.com/1599455360-lang
+
+# The configurations of the second line of home banner
+# icon/button will not show up if you leave the corresponding socialLink empty
+# 首页 banner 中的第二行个人信息配置，留空即不启用
+socialLink:
+  github:  https://github.com/1599455360-lang
+  email: jj13523178139@163.com
+  facebook: # https://www.facebook.com/xxx
+  twitter: # https://twitter.com/xxx
+  qq: 1599455360
+  weibo: # https://weibo.com/xxx
+  zhihu: # https://www.zhihu.com/xxx
+  rss: false # true、false
+
+# Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
+# You can add `toc: false` to the Front-matter of a post to turn off the TOC.
+# 是否激活文章 TOC 功能，并配置TOC支持选中哪些标题类型，这是全局配置。
+# 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能
+toc:
+  enable: true
+  heading: h2, h3, h4
+  collapseDepth: 0 # 目录默认展开层级
+  showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
+
+# 代码块相关
+code:
+  lang: true # 代码块是否显示名称
+  copy: true # 代码块是否可复制
+  shrink: true # 代码块是否可以收缩
+  break: false # 代码是否折行
+
+# 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
+reward:
+  enable: false
+  title: 你的赏识是我前进的动力
+  wechat: /medias/reward/wechat.png
+  alipay: /medias/reward/alipay.jpg
+
+# Whether to activate the copyright information of the blog and author when copying the post content.
+# minCharNumber: Approve copyright information by copying at least how many characters.
+# 是否激活复制文章时追加博客和作者的版权信息.
+copyright:
+  enable: true
+  minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
+  description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
+
+# Whether to show the word count and reading time of the posts.
+# 是否显示文章字数统计和阅读时长.
+postInfo:
+  date: true # 发布日期
+  wordCount: true # 字数统计
+  readCount: true # 阅读时长
+  min2read: true # 阅读时长
+
+# Personal information configuration
+# 个人信息配置
+myProjects:
+  enable: true
+  title: JJ_KMR的项目
+  description: 这里展示我的一些个人项目
+  data:
+    hexo-theme-matery:
+      icon: fas fa-palette
+      iconBackground: 'linear-gradient(135deg, #F7971E 0%, #FFD200 100%)'
+      url: https://github.com/1599455360-lang
+      description: JJ_KMR的个人博客项目
+
+# Personal skills configuration
+# 个人技能配置
+mySkills:
+  enable: true
+  title: 我的技能
+  description: 熟练掌握的技术栈
+  data:
+    JavaScript:
+      background: '#F7DF1E'
+      color: '#000'
+      percent: 80
+    HTML5:
+      background: '#E34F26'
+      color: '#FFF'
+      percent: 85
+    CSS3:
+      background: '#1572B6'
+      color: '#FFF'
+      percent: 75
+    Node.js:
+      background: '#339933'
+      color: '#FFF'
+      percent: 70
+    Git:
+      background: '#F05032'
+      color: '#FFF'
+      percent: 85
+
+# Footer configuration
+# 页脚配置
+footer:
+  since: 2026
+  powered: true
+  beian: 
+    enable: false
+    icp: 
+    police: 
+  push.gov: 
+    enable: false
+
+# Valine 评论插件配置
+valine:
+  enable: false
+  appId: 
+  appKey: 
+  placeholder: 
+  notify: false
+  verify: false
+  visitor: true
+  avatar: 'mm'
+  meta: ['nick', 'mail', 'link']
+  pageSize: 10
+  lang: 'zh-CN'
+  emptyInfo: '快来做第一个评论的人吧~'
+
+# Minivaline 评论插件配置
+minivaline:
+  enable: false
+  appId: 
+  appKey: 
+  placeholder: 
+  adminEmailMd5: 
+  math: true
+  md: true
+  visitor: true
+
+# Twikoo 评论插件配置
+twikoo:
+  enable: false
+  envId: 
+  region: 
+
+# Waline 评论插件配置  
+waline:
+  enable: false
+  serverURL: 
+  lang: zh-CN
+  locale:
+    placeholder: 欢迎留言评论~
+  dark: auto
+
+# Share plugin configuration
+# 分享插件配置
+share:
+  enable: true
+  platforms: qq, wechat, qzone, google
+  # 可用的分享平台: qq, wechat, qzone, weibo, douban, facebook, twitter, google, linkedin
+  # 已注释平台: weibo, douban, facebook, twitter, linkedin
+  mobileSites: qq, wechat, qzone
+
+# Search plugin configuration
+# 搜索插件配置
+search:
+  enable: true
+  placeholder: 搜索文章
+
+# SEO configuration
+# SEO 配置
+seo:
+  baiduSitePush: false
+  baiduAnalytics: 
+  googleAnalytics: 
+  baiduVerification: 
+  googleVerification: 
+
+# Other configuration
+# 其他配置
+lazyload:
+  enable: true
+
+# 是否激活数学公式支持
+mathjax:
+  enable: false
+  showMenu: true
+
+# 是否激活 mermaid 支持
+mermaid:
+  enable: false
+
+# 图片灯箱效果
+fancybox:
+  enable: true
+
+# 文章二维码
+postQr:
+  enable: true
+  text:
+
+# 文章过期提醒
+postExpiration:
+  enable: false
+  duration: 365
+
+# 腾讯验证码配置
+# Tencent captcha configuration
+tcaptcha:
+  enable: false
+
+# Gitment评论配置
+# Gitment configuration
+gitment:
+  enable: false
+  owner:
+  repo:
+  oauth:
+    client_id:
+    client_secret:
+  title: '提示'
+  text: '本文发表于 %s 天前，其中的信息可能已经过时，请谨慎参考！'
+
+# Disqus评论配置
+# Disqus configuration
+disqus:
+  enable: false
+  shortname:
