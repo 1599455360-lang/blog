@@ -37,29 +37,15 @@ type: "musics"
   <!-- 播放器容器 -->
   <div id="playerContainer" class="music-player-box">
     <meting-js
-      id="周杰伦"
+      id="60198"
       server="netease"
-      type="search"
+      type="playlist"
       fixed="false"
-      list-folded="true"
+      list-folded="false"
       autoplay="false"
       theme="#667eea">
     </meting-js>
   </div>
-
-</div>
-
-<!-- 使用说明 -->
-<div class="music-info-box">
-  <h4><i class="fas fa-lightbulb"></i> 使用提示</h4>
-  <ul>
-    <li>在搜索框中输入歌曲名或歌手名，点击搜索按钮</li>
-    <li>点击热门标签可快速搜索该歌手的歌曲</li>
-    <li>搜索结果会显示在播放器中，点击即可播放</li>
-    <li>支持歌词同步显示和多种播放模式</li>
-    <li>由于版权原因，部分歌曲可能无法播放</li>
-  </ul>
-</div>
 
 <style>
 .music-intro {
@@ -330,6 +316,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>

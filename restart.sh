@@ -19,13 +19,13 @@ fi
 
 # 清理缓存
 echo "[2/3] 清理缓存并生成静态文件..."
-hexo clean > /dev/null 2>&1
-hexo generate > /dev/null 2>&1
+npx hexo clean > /dev/null 2>&1
+npx hexo generate > /dev/null 2>&1
 echo "✓ 缓存已清理,静态文件已生成"
 
 # 启动服务器
 echo "[3/3] 启动服务器..."
-nohup hexo server > /dev/null 2>&1 &
+nohup npx hexo server > /dev/null 2>&1 &
 
 # 等待服务启动
 sleep 3
