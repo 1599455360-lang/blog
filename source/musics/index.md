@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-//  简单描述日志
+//  这个内容作修改使用
  
 </script>
 
